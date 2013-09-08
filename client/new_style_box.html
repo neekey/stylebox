@@ -1,0 +1,62 @@
+<template name="NewStyleBox">
+    <div class="modal fade J_NewStyleBoxModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal J_Form" role="form">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">添加样式</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="J_Jsfiddle-URL" class="col-lg-2 control-label">Jsfiddle</label>
+                            <div class="col-lg-10">
+                                <input type="url" id="J_Jsfiddle-URL" name="jsfiddle" class="form-control" placeholder="Jsfiddle地址">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="J_NewModDesc" class="col-lg-2 control-label">描述</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" id="J_NewModDesc" name="description" placeholder="关于模块的描述"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">兼容性</label>
+                            <div class="col-lg-10">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="ie6">IE6
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="ie7">IE7
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="ie8">IE8
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="ie9">IE9
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="ie10">IE10
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="chrome">Chrome
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="firefox">Firefox
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="compatibility" value="safari">Safari
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary J_Add" >添加</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+</template>

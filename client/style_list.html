@@ -1,0 +1,19 @@
+<template name="StyleList">
+    <ul class="style-list">
+        {{#each list}}
+        <li class="item">
+            <div class="jsfiddle-frame">
+                <iframe width="350px" height="200" src="http://jsfiddle.net/{{slug}}/embedded/result,html,css/presentation" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            </div>
+            <ul class="compatibility">
+                {{#each compatibility}}
+                <li class="label label-info">{{.}}</li>
+                {{/each}}
+            </ul>
+            <div class="desc">
+                {{description}}
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</template>

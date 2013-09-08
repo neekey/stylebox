@@ -1,0 +1,19 @@
+<template name="Main">
+
+    <div class="header page-{{stage}}">
+        {{> Header}}
+    </div>
+
+    <div class="content page-{{stage}}">
+
+        {{#if equals stage "index"}}
+        {{> StyleList}}
+        {{/if}}
+
+        {{#if equals stage "user"}}
+        {{> UserStyleList}}
+        {{/if}}
+
+    </div>
+
+</template>

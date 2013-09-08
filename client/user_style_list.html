@@ -1,0 +1,22 @@
+<template name="UserStyleList">
+    <ul class="style-list">
+        {{#each list}}
+        <li class="item">
+            <div class="slug"><a target="_blank" href="{{jsfiddle}}">{{slug}}</a></div>
+            <div class="compatibility">
+                <ul class="list">
+                    {{#each compatibility}}
+                    <li class="label label-info">{{.}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="desc">
+                {{description}}
+            </div>
+            <div class="action">
+                <span class="J_Delete btn btn-danger" data-id="{{_id}}">删除</span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</template>
